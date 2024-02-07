@@ -22,8 +22,8 @@
                     "updatedAt": "2023-05-19T10:18:27.828Z",
                     "__v": 0,
                     "id": "65c07419873cf34a22275647",
-                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65aea34ffa15b11ec82acf10/projects/65c07419873cf34a22275644/assets/65c07419873cf34a22275647?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240205%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240205T162041Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=1f979aedf20102a2f5265d1453dfc550eda28b07146e41fe3f8e6d028e4ebf0b7f1ba92d34abc01ef1e7cea6247e186f4798d8d125aec6d9296fde6aadedc6441ad755768d293e276f728aa5ee12f858b83704341e592ed6adadb8bb2cf93963639494fe5c66e283d8141b89a03ddb10ee318040657c7970220b69ea9c3bb8eed415384e79cf6e700022f65478163ef347f96c3c56a0fee71466872f258418cdb0f932805f89f9cd5e29d862ee54aa018b301977916f4fcaf24913a21cc9e80fdb502b455194125b6b11d3b9501b10ae7d2c16677a47d8ef61d30270e1098918f622f0fff03ae99c73b1809f3d4df0fc292e3b9699400ea857c535db67240ca3",
-                    "signedUrlExpirationTime": 1707322841319
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/65aea34ffa15b11ec82acf10/projects/65c07419873cf34a22275644/assets/65c07419873cf34a22275647?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20240207%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20240207T030627Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=7bfd79a829fab4daedd5869f1417fc3c47afea3308e31e05c9aeb043f5e49ac513a2eaca4fc63aeb39545cbc91d818ae0543354739671f2028012f83c831935f0c2b856274ce325bf5ec51e524390061c1b342c91295fb817d4d0370018abad40bc30dadb957e1023662fcbb892435d333576d0609c67fb520ff5ceaffc47e39712a3eaca917b78a51ee397f99d6740e90f694341631b2194ee5bc15649eab0c2a022a6278c22cd8960745670a5e164a78c0538029b4e2b0654b812653a1eacb0a9ad55b10aba1d9743576e5a6b40a36746f410ab3c916b39623647bfde4bb5ec101faf13a61659690f2dd5f18acd25b2b608bf0b7c85e9fb196b55f72199655",
+                    "signedUrlExpirationTime": 1707447987403
                 }
             },
             "backendUpgradeVersion": 24,
@@ -31,10 +31,19 @@
                 "b06b5f8c-a04d-43c1-9a72-5471132b0830": {
                     "xml": "",
                     "permissions": {
-                        "android": [],
-                        "ios": []
+                        "android": [
+                            "android.permission.CAMERA"
+                        ],
+                        "ios": [
+                            {
+                                "name": "NSCameraUsageDescription",
+                                "label": "Camera",
+                                "hint": "Describe why your app uses the camera."
+                            }
+                        ]
                     },
                     "enabledFeatures": {
+                        "location": true,
                         "iap": false
                     }
                 },
@@ -103,7 +112,9 @@
                 "cloudinaryAPISecret": "",
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -149,7 +160,9 @@
                 "cloudinaryAPISecret": "",
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
